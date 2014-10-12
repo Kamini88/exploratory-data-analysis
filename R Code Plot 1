@@ -1,0 +1,3 @@
+Exploratory.data<- read.csv("C:/Users/kunal/Desktop/Coursera/Exploratory data.csv")
+View(Exploratory.data)
+hist(Exploratory.data$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
