@@ -1,0 +1,6 @@
+Exploratory.data<- read.csv("C:/Users/kunal/Desktop/Coursera/Exploratory data.csv")
+View(Exploratory.data)
+
+datetime=paste(as.Date(Exploratory.data$Date),Exploratory.data$Time)
+Exploratory.data$Datetime = as.POSIXct(datetime)
+plot(Exploratory.data$Global_active_power, Exploratory.data$Datetime,type="l", ylab="Global Active Power (kilowatts)", xlab="")
